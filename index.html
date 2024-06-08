@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch the Ball</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module">
+        import { tailChase } from 'https://cdn.jsdelivr.net/npm/ldrs@latest';
+        tailChase.register();
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Catch the Ball</h1>
+        <div class="score-board">
+            امتیاز: <span id="score">0</span>
+        </div>
+        <div id="gameArea" class="game-area">
+            <l-tail-chase id="loading" size="40" speed="1.75" color="white"></l-tail-chase>
+            <div id="ball" class="ball" hidden></div>
+        </div>
+        <button id="resetButton">شروع دوباره</button>
+    </div>
+    <script src="script.js"></script>
+    <!-- متن کوچک "designed by ENM" -->
+    <div style="font-size: 10px; text-align: center; margin-top: 20px;">designed by ENM</div>
+</body>
+</html>
